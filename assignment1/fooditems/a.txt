@@ -1,7 +1,4 @@
-from django.shortcuts import render
-
-def fooditems(request):
-        meals = [
+     meals = [
         {
             "strMeal": "BeaverTails",
             "strMealThumb": "https://www.themealdb.com/images/media/meals/ryppsv1511815505.jpg",
@@ -53,14 +50,9 @@ def fooditems(request):
             "idMeal": "52925"
         }
     ]
-        context = {
+       
+ context = {
         'meals': meals,
     }
-        return render(request, 'index.html', context)
 
-
-
-       
-  
-
-   
+   return render(request, 'index.html', context)
